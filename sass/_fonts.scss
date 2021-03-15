@@ -1,1 +1,26 @@
 // FONTS STYLING
+@font-face {
+   font-family: "Halant-Regular";
+   src: url(../fonts/Halant-Regular.ttf);
+}
+
+@font-face {
+   font-family: "Halant-Bold";
+   src: url(../fonts/Halant-Bold.ttf);
+}
+
+@font-face {
+   font-family: "NunitoSans-Regular";
+   src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+   font-family: "NunitoSans-SemiBold";
+   src: url(../fonts/NunitoSans-SemiBold.ttf);
+}
+
+$heading-regular: "Halant-Regular";
+$heading-semibold: "Halant-Bold";
+
+$text-regular: "NunitoSans-Regular";
+$text-semibold: "NunitoSans-SemiBold";
