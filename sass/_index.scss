@@ -2,15 +2,23 @@
   font-family: $text-regular;
 }
 
+.caption{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.underlined{
+  margin-top: 0;
+  border-bottom: 2px solid red;
+}
+
 header{
     height: 100vh;
 }
   
   .jumbotron{
      height: 100%;
-     background-image: url(../imgs/1.jpg);
-     background-size: cover;
-     background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url(../imgs/1.jpg);
+     background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)), url(../imgs/image.jpg) center;
      font-family: $heading-regular;
      .hero-subtext{
       font-family: $text-regular;
@@ -65,35 +73,49 @@ header{
     }
   
   }
+
   
   
   .why-choose{
     min-height: 65vh;
+    text-align: center;
     
-    .why-choose__caption > p {
+    .why-choose__caption, .why-choose__title {
       font-family: $heading-regular;
     }
 
-    .why-choose__title{
-      font-family: $heading-regular;
+    .why-choose__caption{
+      position: relative;
+        // &::after{
+        //   content: "";
+        //   position: absolute;
+        //   width: 80px;
+        //   height: 2px;
+        //   background-color: red;
+        //   left: 47%;
+        //   bottom: -2%;
+        // }
+      }
     }
-  }
+
+  
   
   
   .visit-banner{
     min-height: 40vh;
+    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)), url(../imgs/image.jpg) center;
     background-color: #444;
     color:#fff;
     display: flex;
     align-items: center;
-    font-family: $heading-regular;
+    font-family: $text-regular;
     font-weight: bold;
   }
 
   .packages{
     min-height: 50vh;
 
-    .packages__caption > h3{
+    .packages__caption > h2{
       font-family: $heading-regular;
     }
   
@@ -176,9 +198,11 @@ header{
   
   .best-tours-banner{
     min-height: 40vh;
+    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)), url(../imgs/image.jpg) center;
     background-color:aqua;
+    color: #fff;
+    font-family: $text-regular;
     font-weight: bold;
-    font-family: $heading-regular;
   }
   
   .footer-dark {
@@ -192,6 +216,7 @@ header{
     margin-bottom:12px;
     font-weight:bold;
     font-size:16px;
+    letter-spacing: 2px;
     font-family: $heading-regular;
   }
   
